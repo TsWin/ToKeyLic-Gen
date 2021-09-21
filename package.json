@@ -1,0 +1,16 @@
+{
+    "name": "chargen",
+    "version": "1.0.0",
+    "description": "charGen is a cool library to generate tokens, licences and much more.",
+    "main": "index.js",
+    "scripts": {
+        "test": "index.js"
+    },
+    "keywords": [
+        "token",
+        "licence",
+        "generate"
+    ],
+    "author": "",
+    "license": "ISC"
+}
