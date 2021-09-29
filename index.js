@@ -2,5 +2,6 @@
 
 module.exports = {
 
-    key: require("./src/classes/key"),
+    Key: require("./src/keys/key"),
+    Token: require("./src/keys/token")
 }
