@@ -1,6 +1,6 @@
 const { keyTest, keyTestValue } = require("./key")
 const { tokenTest, tokenTestValue } = require("./token")
-const { licenceTest, licenceTestValue } = require("./licence")
+const { licenseTest, licenseTestValue } = require("./license")
 
 async function test() {
     console.log("Starting tests:")
@@ -20,12 +20,12 @@ async function test() {
         console.log(`[TOKEN] - ❌ Test Failed (error: ${error})`)
         console.log(error)
     }
-    console.log("[LICENCE] - 🔄 Test Ongoing...")
+    console.log("[LICENSE] - 🔄 Test Ongoing...")
     try {
-        const licenceTestResult = await licenceTestValue()
-        console.log(`[LICENCE] - ✅ Test Passed (output: ${licenceTestResult})`)
+        const licenseTestResult = await licenseTestValue()
+        console.log(`[LICENSE] - ✅ Test Passed (output: ${licenseTestResult})`)
     } catch (error) {
-        console.log(`[LICENCE] - ❌ Test Failed (error: ${error})`)
+        console.log(`[LICENSE] - ❌ Test Failed (error: ${error})`)
         console.log(error)
     }
 }

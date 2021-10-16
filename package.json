@@ -1,7 +1,7 @@
 {
     "name": "keygen",
     "version": "1.0.0",
-    "description": "keyGen is a cool library to generate tokens, licences and much more.",
+    "description": "keyGen is a cool library to generate tokens, licenses and much more.",
     "main": "index.js",
     "scripts": {
         "test": "node ./tests/tests.js"
@@ -9,7 +9,7 @@
     "keywords": [
         "key",
         "token",
-        "licence",
+        "license",
         "generate"
     ],
     "author": "",

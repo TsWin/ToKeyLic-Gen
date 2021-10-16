@@ -1,21 +1,21 @@
-function licenceTest() {
-    const { Licence } = require("../index")
+function licenseTest() {
+    const { License } = require("../index")
 
-    const token = new Licence().gen()
+    const token = new License().gen()
 
 return token;
 }
 
-function licenceTestValue() {
-    const { Licence } = require("../index")
+function licenseTestValue() {
+    const { License } = require("../index")
 
-    const licence = new Licence({
+    const license = new License({
         keyOptions: {
             useNumbers: true,
             useSymbols: true,
             caps: "mix",
         },
-        licenceOptions: {
+        licenseOptions: {
             prefix: "KEYGEN",
             partSeparator: "_",
             useParts: true,
@@ -26,9 +26,9 @@ function licenceTestValue() {
         }
     }).gen()
 
-return licence;
+return license;
 }
 module.exports = {
-    licenceTest,
-    licenceTestValue
+    licenseTest,
+    licenseTestValue
 };

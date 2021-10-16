@@ -4,5 +4,5 @@ module.exports = {
 
     Key: require("./src/keys/key"),
     Token: require("./src/keys/token"),
-    Licence: require("./src/keys/licence")
+    License: require("./src/keys/license")
 }

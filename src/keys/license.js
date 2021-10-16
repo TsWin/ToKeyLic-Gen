@@ -3,56 +3,56 @@
 const { Error, TypeError } = require('../errors');
 const Key = require('./key');
 
-class Licence extends Key {
-	constructor({ keyOptions = {}, licenceOptions = {} } = {}) {
+class License extends Key {
+	constructor({ keyOptions = {}, licenseOptions = {} } = {}) {
 		super(keyOptions);
 		/**
-		 * Number of parts of the licence to be generated.
+		 * Number of parts of the license to be generated.
 		 * @type {number}
 		 */
-		this.numberOfParts = licenceOptions.numberOfParts || 4;
+		this.numberOfParts = licenseOptions.numberOfParts || 4;
 
 		/**
-		 * Add a prefix before the licence generation
+		 * Add a prefix before the license generation
 		 * @type {string}
 		 */
-        this.prefix = licenceOptions.prefix || 'LIC';
+        this.prefix = licenseOptions.prefix || 'LIC';
         
 		/**
 		 * Separates the prefix by separator is given a string.
 		 * @type {string}
 		 */
-		this.prefixSeparator = licenceOptions.prefixSeparator || '-';
+		this.prefixSeparator = licenseOptions.prefixSeparator || '-';
 
 		/**
-		 * Use parts in the licence
+		 * Use parts in the license
 		 * @type {boolean}
 		 */
-        this.useParts = licenceOptions.useParts || false;
+        this.useParts = licenseOptions.useParts || false;
         
 		/**
 		 * Separates the parts by separator is given a string.
 		 * @type {string}
 		 */
-		this.partSeparator = licenceOptions.partSeparator || "-";
+		this.partSeparator = licenseOptions.partSeparator || "-";
 
 		/**
 		 * Minimum length of each part
 		 * @type {number}
 		 */
-		this.minPartLength = licenceOptions.minPartLength || 3;
+		this.minPartLength = licenseOptions.minPartLength || 3;
 
 		/**
 		 * Maximum length of each part
 		 * @type {number}
 		 */
-		this.maxPartLength = licenceOptions.maxPartLength || 10;
+		this.maxPartLength = licenseOptions.maxPartLength || 10;
 
 		/**
 		 * List of extra symbols or characters that you want to include in each part
 		 * @type {Array}
 		 */
-		this.extras = licenceOptions.extras || [];
+		this.extras = licenseOptions.extras || [];
 		this._validateOptions();
 	}
 
@@ -113,7 +113,7 @@ class Licence extends Key {
 	}
 
 	/**
-	 * Validates the licence options.
+	 * Validates the license options.
 	 * @param {TokenOptions} [options=this] Options to validate
 	 * @private
 	 */
@@ -141,4 +141,4 @@ class Licence extends Key {
         }
 	}
 }
-module.exports = Licence;
+module.exports = License;
