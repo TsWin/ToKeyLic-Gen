@@ -13,6 +13,17 @@
         "generate",
         "generator"
     ],
-    "author": "",
-    "license": "ISC"
+    "author": "TsWin",
+    "license": "MIT",
+    "directories": {
+        "test": "tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TsWin/charGen.git"
+    },
+    "bugs": {
+        "url": "https://github.com/TsWin/charGen/issues"
+    },
+    "homepage": "https://github.com/TsWin/charGen#readme"
 }
