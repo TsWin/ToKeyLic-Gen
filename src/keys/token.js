@@ -51,12 +51,12 @@ class Token extends Key {
 		}
 		if (this.useSymbols) {
 			charChain += '`~!@#$%^&*()–_=+[]{}|;:‘“,./<>?'; // missing \
-        }
-        if (this.extras.length > 0) {
-            this.extras.forEach((char) => {
-                charChain += char;
-            })
-        }
+		}
+		// if (this.extras.length > 0) {
+		//     this.extras.forEach((char) => {
+		//         charChain += char;
+		//     })
+		// }
 		for (var i = 0; i < this.numberOfParts; ++i) {
 			key += this.generatePart(charChain, i);
 		}
@@ -66,7 +66,7 @@ class Token extends Key {
 	 * Generates a part of a chain
 	 * @param {string} charChain
 	 */
-    generatePart(charChain, count) {
+	generatePart(charChain, count) {
 		var part = '';
 		if (count > 0) {
 			part += this.separator;
@@ -74,15 +74,15 @@ class Token extends Key {
 		const partLength = Math.floor(
 			Math.random() * (this.maxPartLength - this.minPartLength + 1) +
 				this.minPartLength
-        );
+		);
 		for (var c = 0, n = charChain.length; c < partLength; ++c) {
 			part += charChain.charAt(Math.floor(Math.random() * n));
 		}
-        if (this.extras.length > 0) {
-            this.extras.forEach((char) => {
-                part += char;
-            })
-        }
+		if (this.extras.length > 0) {
+			this.extras.forEach((char) => {
+				part += char;
+			});
+		}
 		return part;
 	}
 
@@ -91,7 +91,7 @@ class Token extends Key {
 	 * @param {TokenOptions} [options=this] Options to validate
 	 * @private
 	 */
-    _validateOptions() {
+	_validateOptions() {
 		if (typeof this.numberOfParts !== 'number') {
 			throw new TypeError('KEY_INVALID_OPTION', 'numberOfParts', 'a number');
 		}
