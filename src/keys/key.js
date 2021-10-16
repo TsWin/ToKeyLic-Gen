@@ -9,8 +9,6 @@ class Key {
      * @property {boolean} useNumbers Add numbers to the key generation
      * @property {boolean} useSymbols Add symbols to the key generation
      * @property {boolean} useCaps Add caps to the key generation
-     * @property {string} prefix Add a prefix before the key generation
-     * @property {string} prefixSeparator Add a prefix separator character before the key generation
      */
 
 

@@ -1,7 +1,7 @@
 {
-    "name": "keygen",
+    "name": "tokeylic-gen",
     "version": "1.0.0",
-    "description": "keyGen is a cool library to generate tokens, licenses and much more.",
+    "description": "ToKeyLic-Gen is a cool library to generate tokens, licenses and much more.",
     "main": "index.js",
     "scripts": {
         "test": "node ./tests/tests.js"
@@ -10,7 +10,8 @@
         "key",
         "token",
         "license",
-        "generate"
+        "generate",
+        "generator"
     ],
     "author": "",
     "license": "ISC"
