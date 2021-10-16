@@ -232,4 +232,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 This module is licensed under [MIT](https://opensource.org/licenses/MIT) license.
 
 ## Thanks
-Made by [@TsWin](https://github.com/TsWin) with ❤️
+Made by [@TsWin](https://github.com/TsWin) and [@matheo-debal](https://github.com/matheo-debal) with ❤️
