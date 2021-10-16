@@ -20,10 +20,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/TsWin/charGen.git"
+        "url": "git+https://github.com/TsWin/ToKeyLic-Gen.git"
     },
     "bugs": {
-        "url": "https://github.com/TsWin/charGen/issues"
+        "url": "https://github.com/TsWin/ToKeyLic-Gen/issues"
     },
-    "homepage": "https://github.com/TsWin/charGen#readme"
+    "homepage": "https://github.com/TsWin/ToKeyLic-Gen#readme"
 }
