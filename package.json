@@ -1,15 +1,17 @@
 {
-    "name": "chargen",
+    "name": "tokeylic-gen",
     "version": "1.0.0",
-    "description": "charGen is a cool library to generate tokens, licences and much more.",
+    "description": "ToKeyLic-Gen is a cool library to generate tokens, licenses and much more.",
     "main": "index.js",
     "scripts": {
-        "test": "index.js"
+        "test": "node ./tests/tests.js"
     },
     "keywords": [
+        "key",
         "token",
-        "licence",
-        "generate"
+        "license",
+        "generate",
+        "generator"
     ],
     "author": "",
     "license": "ISC"
